@@ -44,7 +44,6 @@ export default function LoginPage()
                         size="small"
                         error={!!errors.username}
                         helperText={errors.username?.message}></TextField>
-                    {errors.username?.message}
                     <TextField 
                         {...register("password", { required: "password is required", minLength: { 
                             value: 6,
@@ -58,7 +57,6 @@ export default function LoginPage()
                         size="small"
                         error={!!errors.password}
                         helperText={errors.password?.message}></TextField>
-                    {errors.password?.message}
                     <Button 
                         loading={isSubmitting}
                         disabled={!isValid} 
