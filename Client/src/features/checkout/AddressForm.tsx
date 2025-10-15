@@ -6,7 +6,7 @@ export default function AddressForm() {
     const { register, formState: { errors }} = useFormContext();
 
     return (
-        <Grid>
+        <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 6}}>
                 <TextField
                     {...register("firstname", { required: "firstname is required" })}
